@@ -1,4 +1,4 @@
-const base_url = "https://my-portfolio-website-2-5.onrender.com";
+const base_url = "https://my-portfolio-website-4-1.onrender.com";
 //fetches ratings from various websites
 async function loadRatings() {
     try {
