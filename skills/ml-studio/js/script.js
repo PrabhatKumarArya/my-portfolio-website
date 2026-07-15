@@ -1,4 +1,4 @@
-const API = "https://my-portfolio-website-4-1.onrender.com";
+const API = "https://my-portfolio-website-5-1.onrender.com";
 // ================= ADD PROJECT =================
 document.getElementById("addMLProject").addEventListener("click", addProject);
 async function addProject() {
@@ -68,7 +68,7 @@ async function loadProjects() {
 // ================= RENDER PROJECTS =================
 function renderProjects(data) {
 
-    const container = document.querySelector(".project-container");
+    const container = document.querySelector(".projects-container");
 
     container.innerHTML = "";
 
