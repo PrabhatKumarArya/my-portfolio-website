@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Academics Report</title>
+    <link rel="stylesheet" href="../academics/css/style.css">
+</head>
+<body>
+    <h1>My Academic Report</h1>
+    <div class="add-report">
+        <h3>Add Semester Report</h3>
+
+        <input id="semester" class="inputs" type="text" placeholder="Semester Number">
+        <input id="sgpa" class="inputs" type="text" placeholder="SGPA">
+        <input id="cgpa" class="inputs" type="text" placeholder="CGPA">
+
+        <div class="file-upload">
+            <input type="file" id="file" hidden accept="image/*">
+            <label for="file" class="file-btn">Upload Semester Result Image</label>
+
+            <div id="fileInfo" style="display:none;">
+                <span id="fileName"></span>
+                <button id="removeFile" type="button">❌</button>
+            </div>
+        </div>
+
+        <button type="button" id="addSemesterBtn">Submit</button>
+    </div>
+    <div class="graph-container">
+        <h2>CGPA Trend Analysis</h2>
+        <canvas id="cgpaChart"></canvas>
+    </div>
+    <div class="container"></div>
+    <!-- <div class="progress-section">
+        <div class="progress-box" data-sgpa="7.43" data-cgpa="7.43">
+            <span>Semester 1</span>
+
+            
+            <p>SGPA: 7.43 / 10</p>
+            <div class="bar">
+                <div class="fill sgpa-fill"></div>
+            </div>
+
+            <p>CGPA: 7.43 / 10</p>
+            <div class="bar">
+                <div class="fill cgpa-fill"></div>
+            </div>
+        </div>
+        <div class="progress-box" data-sgpa="7.29" data-cgpa="7.36">
+            <span>Semester 2</span>
+
+            <p>SGPA: 7.29 / 10</p>
+            <div class="bar">
+                <div class="fill sgpa-fill"></div>
+            </div>
+
+            <p>CGPA: 7.36 / 10</p>
+            <div class="bar">
+                <div class="fill cgpa-fill"></div>
+            </div>
+        </div>
+        <div class="progress-box" data-sgpa="6.71" data-cgpa="7.14">
+            <span>Semester 3</span>
+
+            
+            <p>SGPA: 6.71 / 10</p>
+            <div class="bar">
+                <div class="fill sgpa-fill"></div>
+            </div>
+            
+            <p>CGPA: 7.14 / 10</p>
+            <div class="bar">
+                <div class="fill cgpa-fill"></div>
+            </div>
+        </div>
+        <div class="progress-box" data-sgpa="8.43" data-cgpa="7.47">
+            <span>Semester 4</span>
+
+            
+            <p>SGPA: 8.43 / 10</p>
+            <div class="bar">
+                <div class="fill cgpa-fill"></div>
+            </div>
+            <p>CGPA: 7.47 / 10</p>
+            <div class="bar">
+                <div class="fill sgpa-fill"></div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="card" data-sgpa="7.43" data-cgpa="7.43">
+            <img id="sem1img" src="../academics/assets/sem1.jpg" alt="Semester 1">
+            <div class="card-content">
+                <h2>Semester 1</h2>
+                <p>SGPA: 7.43</p>
+                <div class="progress-bar">
+                    <div class="progress sgpa"></div>
+                </div>
+                <p>CGPA: 7.43</p>
+                <div class="progress-bar">
+                    <div class="progress cgpa"></div>
+                </div>    
+            </div>
+        </div>
+        <div class="card" data-sgpa="7.29">
+            <img id="sem2img" src="../academics/assets/sem2.jpg" alt="Semester 1">
+            <div class="card-content">
+                <h2>Semester 2</h2>
+                <p>SGPA: 7.29</p>
+                <div class="progress-bar">
+                    <div class="progress sgpa"></div>
+                </div>
+                <p>CGPA: 7.36</p>
+                <div class="progress-bar">
+                    <div class="progress cgpa"></div>
+                </div>
+            </div>
+        </div>
+        <div class="card" data-sgpa="6.71">
+            <img id="sem3img" src="../academics/assets/sem3.jpg" alt="Semester 1">
+            <div class="card-content">
+                <h2>Semester 3</h2>
+                <p>SGPA: 6.71</p>
+                <div class="progress-bar">
+                    <div class="progress sgpa"></div>
+                </div>
+                <p>CGPA: 7.14</p>
+                <div class="progress-bar">
+                    <div class="progress cgpa"></div>
+                </div>    
+            </div>
+        </div>
+        <div class="card best" data-sgpa="8.43">
+            <img id="sem4img" src="../academics/assets/sem4.jpg" alt="Semester 1">
+            <div class="card-content">
+                <h2>Semester 4</h2>
+                <p>SGPA: 8.43</p>
+                <div class="progress-bar">
+                    <div class="progress sgpa"></div>
+                </div>
+                <p>CGPA: 7.47</p> 
+                <div class="progress-bar">
+                    <div class="progress cgpa"></div>
+                </div>   
+            </div>
+        </div>
+    </div> -->
+    <!-- <script>
+        window.addEventListener("load", () => {
+            document.querySelectorAll(".progress-box").forEach(box => {
+
+                let sgpa = parseFloat(box.dataset.sgpa);
+                let cgpa = parseFloat(box.dataset.cgpa);
+
+                let sgpaPercent = (sgpa / 10) * 100;
+                let cgpaPercent = (cgpa / 10) * 100;
+
+                let fills = box.querySelectorAll(".fill");
+
+                // SGPA bar
+                fills[0].style.width = sgpaPercent + "%";
+
+                // CGPA bar
+                fills[1].style.width = cgpaPercent + "%";
+
+            });
+        });
+    </script> -->
+    <footer class="site-footer">
+    <a href="../index.html">🏠 Go to Home</a>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="module" src="../academics/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #f4f6f9;
+    padding: 40px 20px;
+}
+
+/* Admin Card */
+.admin-card {
+    width: 450px;
+    margin: 0 auto 40px;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.admin-card h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Inputs */
+.admin-card input,
+.admin-card textarea {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.admin-card input:focus,
+.admin-card textarea:focus {
+    border-color: #4f46e5;
+    box-shadow: 0 0 5px rgba(79, 70, 229, 0.3);
+}
+
+.admin-card textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* Button */
+.admin-card button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #4f46e5;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.admin-card button:hover {
+    background: #3730a3;
+    transform: translateY(-2px);
+}
+
+/* Projects Container */
+#projectsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+}
+
+.project-card {
+    width: 320px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  margin: 0;
+  padding: 20px;
+}
+
+h1{
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgba(3,255,2,0.9);
+}
+
+h1:hover{
+    color: #00c6ff;
+}
+
+.projects-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  padding: 20px;
+  width: 250px;
+  color: white;
+  backdrop-filter: blur(10px);
+  transition: 0.3s ease;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  border-color: #00c6ff;
+}
+
+.project-card h3 {
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.project-card button {
+  margin-top: 15px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 8px;
+  background: #00c6ff;
+  color: black;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.project-card button:hover {
+  background: #00a3d4;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 15px;
+  background: #00c6ff;
+  color: black;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: #00a3d4;
+}
+
+.site-footer{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    margin-top:40px;
+    flex-wrap:wrap;
+}
+
+.site-footer a{
+    text-decoration:none;
+    color:white;
+
+    padding:12px 24px;
+
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(12px);
+
+    border:1px solid rgba(255,255,255,0.15);
+    border-radius:12px;
+
+    transition:all 0.3s ease;
+}
+
+.site-footer a:hover{
+    transform:translateY(-4px);
+
+    border-color:#00c6ff;
+
+    box-shadow:
+        0 0 15px rgba(0,198,255,0.3),
+        0 0 30px rgba(0,198,255,0.15);
+}
+
+.site-footer a{
+    width:180px;
+    text-align:center;
+}
+
+.project-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 6px 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.github {
+    background: #24292e;
+    color: white;
+}
+
+.live {
+    background: #00c6ff;
+    color: white;
+}
+
+.delete {
+    background: crimson;
+    color: white;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
