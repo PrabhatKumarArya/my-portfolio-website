@@ -1,4 +1,4 @@
-const API = "https://my-portfolio-website-2-1.onrender.com";
+const API = "https://my-portfolio-website-2-5.onrender.com";
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
 let chartInstance = null;
 const firebaseConfig = {

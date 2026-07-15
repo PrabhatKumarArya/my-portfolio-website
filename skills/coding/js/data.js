@@ -1,11 +1,11 @@
-const base_url = "https://my-portfolio-website-2-1.onrender.com";
+const base_url = "https://my-portfolio-website-2-5.onrender.com";
 //fetches ratings from various websites
 async function loadRatings() {
     try {
         const res = await fetch(`${base_url}/api/ratings`);
         const data = await res.json();
 
-        document.getElementById("maxRating").innerText = data.maxRating || 1282;
+        document.getElementById("maxRating").innerText = data.maxRating && 1282;
 
         document.getElementById("cf").innerText = data.codeforces;
         document.getElementById("cc").innerText = 1282;
