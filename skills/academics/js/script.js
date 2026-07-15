@@ -1,3 +1,4 @@
+const API = "https://my-portfolio-website-2-1.onrender.com";
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
 let chartInstance = null;
 const firebaseConfig = {
@@ -118,7 +119,7 @@ async function addSemester() {
             return;
         }
 
-        const res = await fetch("http://localhost:4000/api/academic", {
+        const res = await fetch(`${API}/api/academic`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -149,7 +150,7 @@ async function addSemester() {
     }
 }
 async function getAcademicData() {
-    const res = await fetch("http://localhost:4000/api/academic");
+    const res = await fetch(`${API}/api/academic`);
     return await res.json();
 }
 async function renderCards() {
@@ -290,7 +291,7 @@ removeFile.addEventListener("click", function () {
     fileName.innerText = "";
 });
 async function deleteSemester(id) {
-    const res = await fetch(`http://localhost:4000/api/academic/${id}`, {
+    const res = await fetch(`${API}/api/academic/${id}`, {
         method: "DELETE"
     });
 

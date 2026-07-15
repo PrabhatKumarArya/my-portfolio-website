@@ -1,3 +1,4 @@
+const API = "https://my-portfolio-website-2-1.onrender.com";
 // ================= ADD PROJECT =================
 document.getElementById("addMLProject").addEventListener("click", addProject);
 async function addProject() {
@@ -15,7 +16,7 @@ async function addProject() {
             return;
         }
 
-        const res = await fetch("http://localhost:4000/api/ml-projects", {
+        const res = await fetch(`${API}/api/ml-projects`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -47,7 +48,7 @@ async function addProject() {
 async function loadProjects() {
     try {
 
-        const res = await fetch("http://localhost:4000/api/ml-projects");
+        const res = await fetch(`${API}/api/ml-projects`);
 
         const response = await res.json();
 
@@ -144,7 +145,7 @@ document.addEventListener("keydown", function (e) {
 });
 
 (async () => {
-    const res = await fetch("http://localhost:4000/api/ml-projects");
+    const res = await fetch(`${API}/api/ml-projects`);
     const json = await res.json();
     console.log(json);
 })();

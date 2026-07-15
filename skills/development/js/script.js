@@ -1,3 +1,4 @@
+const API = "https://my-portfolio-website-2-1.onrender.com";
 document.getElementById("addProject").addEventListener("click", async () => {
     try {
         const project = {
@@ -11,7 +12,7 @@ document.getElementById("addProject").addEventListener("click", async () => {
             alert("Title and Description required ❌");
             return;
         }
-        const res = await fetch("http://localhost:4000/api/web-dev-projects", {
+        const res = await fetch(`${API}/api/web-dev-projects`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -45,7 +46,7 @@ document.getElementById("addProject").addEventListener("click", async () => {
 });
 async function loadProjects() {
     try {
-        const res = await fetch("http://localhost:4000/api/web-dev-projects");
+        const res = await fetch(`${API}/api/web-dev-projects`);
         const data = await res.json();
 
         renderProjects(data);

@@ -1,3 +1,4 @@
+const API = "https://my-portfolio-website-2-1.onrender.com";
 require("dotenv").config();
 
 const express = require("express");
@@ -7,7 +8,15 @@ const puppeteer = require("puppeteer");
 
 const app = express();
 
-app.use(cors());
+app.use(cors({
+  origin: [
+    "http://127.0.0.1:5500",
+    "http://localhost:5500",
+    "https://YOUR-NETLIFY-SITE.netlify.app"
+  ],
+  methods: ["GET", "POST"],
+  credentials: true
+}));
 app.use(express.json());
 const path = require("path");
 
@@ -28,6 +37,13 @@ const db = admin.database();
 // ================= TEST ROUTE =================
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "../resume/resume.html"));
+});
+
+app.get("/health", (req, res) => {
+  res.status(200).json({
+    success: true,
+    message: "Backend is running"
+  });
 });
 
 // ================= SAMPLE API =================
