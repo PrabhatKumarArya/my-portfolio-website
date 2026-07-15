@@ -33,5 +33,3 @@ build/
 # Temporary files
 *.tmp
 *.temp
-
-backend/*.json
