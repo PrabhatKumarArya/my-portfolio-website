@@ -9,8 +9,8 @@ const puppeteer = require("puppeteer");
 const app = express();
 
 app.use(cors({
-   origin: "https://my-bice-pi.vercel.app",
-methods: ["GET", "POST"],
+   origin: "my-portfolio-website-5-1.vercel.app",
+methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
 }));
 app.use(express.json());
