@@ -9,12 +9,8 @@ const puppeteer = require("puppeteer");
 const app = express();
 
 app.use(cors({
-  origin: [
-    "http://127.0.0.1:5500",
-    "http://localhost:5500",
-    "https://YOUR-NETLIFY-SITE.netlify.app"
-  ],
-  methods: ["GET", "POST"],
+   origin: "https://my-bice-pi.vercel.app",
+methods: ["GET", "POST"],
   credentials: true
 }));
 app.use(express.json());
