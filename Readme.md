@@ -52,6 +52,12 @@ portfolio/
 │   ├── package.json
 │   └── .env
 │
+├── assets/
+│   ├── My_Resume.pdf
+│   
+├── css/
+│   ├── style.css
+│  
 ├── resume/
 │   ├── index.html
 │   ├── style.css
@@ -95,6 +101,7 @@ portfolio/
 |    ├──style.css
 |  ├──index.html
 |  ├──profile.png
+|── README.md
 └── README.md
 ```
 

@@ -1,38 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>My Academics Report</title>
-    <link rel="stylesheet" href="../academics/css/style.css">
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
+
+    <header class="hero">
+        <h1>Dynamic Control Panel</h1>
+        <div class="links">
+            <a href="../index.html">🏠 Home</a>
+            <a href="../coding/index.html">💻 CP Dashboard</a>
+            <a href="../development/index.html">Dev Dashboard</a>
+            <a href="../ml-studio/index.html">ML Dashboard</a>
+        </div>
+    </header>
     <h1>My Academic Report</h1>
     <div class="add-report">
         <h3>Add Semester Report</h3>
-
         <input id="semester" class="inputs" type="text" placeholder="Semester Number">
         <input id="sgpa" class="inputs" type="text" placeholder="SGPA">
         <input id="cgpa" class="inputs" type="text" placeholder="CGPA">
-
         <div class="file-upload">
             <input type="file" id="file" hidden accept="image/*">
             <label for="file" class="file-btn">Upload Semester Result Image</label>
-
             <div id="fileInfo" style="display:none;">
                 <span id="fileName"></span>
                 <button id="removeFile" type="button">❌</button>
             </div>
         </div>
-
         <button type="button" id="addSemesterBtn">Submit</button>
     </div>
     <div class="graph-container">
         <h2>CGPA Trend Analysis</h2>
         <canvas id="cgpaChart"></canvas>
     </div>
-    <div class="container"></div>
-    <!-- <div class="progress-section">
+    <div class="container">
+        <!-- <div class="progress-section">
         <div class="progress-box" data-sgpa="7.43" data-cgpa="7.43">
             <span>Semester 1</span>
 
@@ -167,12 +177,71 @@
             });
         });
     </script> -->
-    <footer class="site-footer">
-        <a href="../coding/index.html">⬅️ Previous Page</a>
-        <a href="../index.html">🏠 Go to Home</a>
-        <a href="../development/index.html">➡️ Next Page</a>
+        <!-- <div class="card" data-sgpa="7.43" data-cgpa="7.43">
+            <img id="sem1img" src="assets/sem1.jpg" alt="Semester 1">
+            <div class="card-content">
+                <h2>Semester 1</h2>
+                <p>SGPA: 7.43</p>
+                <div class="progress-bar">
+                    <div class="progress sgpa"></div>
+                </div>
+                <p>CGPA: 7.43</p>
+                <div class="progress-bar">
+                    <div class="progress cgpa"></div>
+                </div>
+            </div>
+        </div> -->
+        <!-- <div class="card" data-sgpa="7.29" data-cgpa="7.36">
+            <img id="sem2img" src="assets/sem2.jpg" alt="Semester 2">
+            <div class="card-content">
+                <h2>Semester 2</h2>
+                <p>SGPA: 7.29</p>
+                <div class="progress-bar">
+                    <div class="progress sgpa"></div>
+                </div>
+                <p>CGPA: 7.36</p>
+                <div class="progress-bar">
+                    <div class="progress cgpa"></div>
+                </div>
+            </div>
+        </div> -->
+        <!-- <div class="card" data-sgpa="6.71" data-cgpa="7.14">
+            <img id="sem3img" src="assets/sem3.jpg" alt="Semester 3">
+            <div class="card-content">
+                <h2>Semester 3</h2>
+                <p>SGPA: 6.71</p>
+                <div class="progress-bar">
+                    <div class="progress sgpa"></div>
+                </div>
+                <p>CGPA: 7.14</p>
+                <div class="progress-bar">
+                    <div class="progress cgpa"></div>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- <div class="card best" data-sgpa="8.43" data-cgpa="7.47">
+            <img id="sem4img" src="assets/sem4.jpg" alt="Semester 4">
+            <div class="card-content">
+                <h2>Semester 4</h2>
+                <p>SGPA: 8.43</p>
+                <div class="progress-bar">
+                    <div class="progress sgpa"></div>
+                </div>
+                <p>CGPA: 7.47</p>
+                <div class="progress-bar">
+                    <div class="progress cgpa"></div>
+                </div>
+            </div>
+        </div> -->
+    </div>
+    <footer class="footer">
+        <p class="copyright">
+            © 2026 Prabhat Kumar Arya. All Rights Reserved.
+        </p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script type="module" src="../academics/js/script.js"></script>
+    <script type="module" src="js/script.js"></script>
 </body>
+
 </html>
