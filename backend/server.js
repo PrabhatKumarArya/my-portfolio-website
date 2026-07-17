@@ -9,7 +9,7 @@ const puppeteer = require("puppeteer");
 const app = express();
 
 app.use(cors({
-   origin: "my-portfolio-website-5-1.vercel.app",
+origin: "https://my-portfolio-website-5-1.vercel.app",
 methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
 }));
