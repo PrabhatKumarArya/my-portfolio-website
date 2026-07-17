@@ -53,7 +53,7 @@ portfolio/
 │   └── .env
 │
 ├── resume/
-│   ├── resume.html
+│   ├── index.html
 │   ├── style.css
 │   └── script.js
 │
