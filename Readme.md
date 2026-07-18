@@ -47,21 +47,26 @@ A modern and responsive personal portfolio website built using HTML, CSS, JavaSc
 ```
 portfolio/
 │
+├── assets/
+│   ├── My_Resume.pdf
+│   
 ├── backend/
 │   ├── server.js
 │   ├── package.json
 │   └── .env
 │
-├── assets/
-│   ├── My_Resume.pdf
-│   
 ├── css/
 │   ├── style.css
 │  
+├── images/
+│   ├── profile.png
+│   
 ├── resume/
+│   ├── css/
+      ├── style.css
+│   ├── images/
+│      ├── profile.png
 │   ├── index.html
-│   ├── style.css
-│   └── script.js
 │
 |──skills
 |  ├──academics
@@ -102,7 +107,6 @@ portfolio/
 |  ├──index.html
 |  ├──profile.png
 |── README.md
-└── README.md
 ```
 
 ---
