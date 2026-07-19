@@ -225,6 +225,26 @@ h1 {
     transform:scale(1.6);
 }
 
+.card.best{
+    border:3px solid #facc15;
+    box-shadow:0 0 25px rgba(250,204,21,0.8);
+    transform:translateY(-8px) scale(1.03);
+    position:relative;
+}
+
+.card.best::before{
+    content:"🏆 Best Semester";
+    position:absolute;
+    top:-15px;
+    right:20px;
+    background:#facc15;
+    color:#111827;
+    padding:6px 14px;
+    border-radius:20px;
+    font-size:14px;
+    font-weight:700;
+}
+
 .card-content{
     flex:1;
     background:#020617;
