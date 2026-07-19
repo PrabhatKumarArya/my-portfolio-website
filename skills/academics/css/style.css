@@ -199,32 +199,6 @@ h1 {
     padding:30px;
 }
 
-.card{
-    width:600px;
-    padding:20px;
-    display:flex;
-    gap:20px;
-    transition:.4s;
-}
-
-.card:hover{
-    transform:
-    translateY(-10px);
-}
-
-.card img{
-    width:180px;
-    height:auto;
-    max-height:250px;
-    object-fit:contain;
-    border-radius:20px;
-    display:block;
-}
-
-.card img:hover{
-    transform:scale(1.6);
-}
-
 .card.best{
     border:3px solid #facc15;
     box-shadow:0 0 25px rgba(250,204,21,0.8);
@@ -243,6 +217,31 @@ h1 {
     border-radius:20px;
     font-size:14px;
     font-weight:700;
+}
+
+.card{
+    transition:transform .4s, box-shadow .4s;
+}
+
+.card:hover{
+    transform:translateY(-10px) scale(1.03);
+}
+
+.card img{
+    width:180px;
+    height:auto;
+    max-height:250px;
+    object-fit:contain;
+    border-radius:20px;
+    display:block;
+}
+
+.card img:hover{
+    transform:scale(1.6);
+}
+
+.card.best:hover{
+    transform:translateY(-12px) scale(1.05);
 }
 
 .card-content{
